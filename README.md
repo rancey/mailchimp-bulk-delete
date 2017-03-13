@@ -7,7 +7,8 @@ Setup:
 - set the $ListID in the code to default to one of your lists or you can set this on the command line when you call the script. You get the list ID from "Lists -> Settings (select from drop down on right of the list) -> Unique List ID on the screen that is displayed.
 
 Usage:
-php mc_delete_bulk.php -f"<CSV_filename>" -l"<listID_to_delete_from>"
-php mc_delete_bulk.php -f"<CSV_filename>"
+php mc_delete_bulk.php -f"CSV_filename" -l"listID_to_delete_from"
+
+php mc_delete_bulk.php -f"CSV_filename"
 
 The code is written to use the first column of any CSV file as the email address to be deleted. So although this works with MC export files, you can of course use any CSV with the email address as the first field.
